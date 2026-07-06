@@ -1,0 +1,18 @@
+/* ============================================================
+   Taiga UI — Webfonts
+   Manrope is the documented Taiga UI typeface (free, Google Fonts).
+   The @import below loads the full weight range (400–800) for rendering;
+   the explicit @font-face registers the family with the design-system
+   compiler. For production, self-host the .woff2/.ttf binaries and point
+   these `src` URLs at local files.
+   ============================================================ */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v20/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FO_F.ttf)
+    format("truetype");
+}

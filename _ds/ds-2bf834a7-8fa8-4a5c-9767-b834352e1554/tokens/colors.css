@@ -1,0 +1,141 @@
+/* ============================================================
+   Taiga UI — Color tokens (v3 default theme)
+   Light theme on :root; dark theme on [data-tui-theme="dark"].
+   Values verified against the source Figma's color frequencies
+   (primary #526ED3, primary-hover #6C86E2, ink #1B1F3B,
+   info #70B6F6, warning #FF8C67, brand yellow #FFDD2D).
+   ============================================================ */
+:root,
+[data-tui-theme="light"] {
+  /* ---- Base palette (greyscale surfaces & icons) ---- */
+  --tui-base-01: #ffffff; /* page primary bg, icon fill on inverted bg */
+  --tui-base-02: #f6f6f6; /* page secondary bg, tiles, static marker bg */
+  --tui-base-03: #ededed; /* hovered tile backgrounds */
+  --tui-base-04: #e0e0e0; /* table borders, islands, blocks */
+  --tui-base-05: #d7d7d7; /* hovered island/interactive block border */
+  --tui-base-06: #b0b0b0; /* hovered interactive icon color */
+  --tui-base-07: #808080; /* blocks with inverted bg */
+  --tui-base-08: #5c636b; /* alternative interface icon color */
+  --tui-base-09: #333333; /* icon color over inverted bg */
+
+  /* ---- Interactive ---- */
+  --tui-primary: #526ed3;          /* button & marker bg */
+  --tui-primary-hover: #6c86e2;
+  --tui-primary-active: #3d55b0;
+  --tui-secondary: rgba(27, 31, 59, 0.04);   /* input field & secondary button bg */
+  --tui-secondary-hover: rgba(27, 31, 59, 0.08);
+  --tui-secondary-active: rgba(27, 31, 59, 0.12);
+  --tui-accent: #ffdd2d;           /* brand accent (T-yellow) */
+  --tui-accent-hover: #ffe45c;
+  --tui-accent-active: #f5ce00;
+  --tui-clear: rgba(255, 255, 255, 0.16);  /* fill on colored bg */
+  --tui-clear-hover: rgba(255, 255, 255, 0.24);
+  --tui-clear-active: rgba(255, 255, 255, 0.32);
+  --tui-clear-inverse: rgba(0, 0, 0, 0.16);
+  --tui-clear-inverse-hover: rgba(0, 0, 0, 0.24);
+  --tui-clear-inverse-active: rgba(0, 0, 0, 0.32);
+
+  /* ---- Text ---- */
+  --tui-text-01: #1b1f3b;          /* primary text & headings */
+  --tui-text-02: #79818c;          /* secondary text & descriptions */
+  --tui-text-03: #a9b0b8;          /* inactive, helpers, placeholders */
+  --tui-text-01-night: #ffffff;
+  --tui-link: #526ed3;
+  --tui-link-hover: #6c86e2;
+  --tui-positive: #4ac99b;         /* income, price grow */
+  --tui-positive-hover: #3cb389;
+  --tui-negative: #f45725;         /* expense, price fall */
+  --tui-negative-hover: #dd4c1e;
+
+  /* ---- Status: fill + background pair ---- */
+  --tui-success-fill: #4ac99b;
+  --tui-success-bg: rgba(74, 201, 155, 0.12);
+  --tui-success-bg-hover: rgba(74, 201, 155, 0.24);
+  --tui-error-fill: #f45725;
+  --tui-error-bg: rgba(244, 87, 37, 0.12);
+  --tui-error-bg-hover: rgba(244, 87, 37, 0.24);
+  --tui-info-fill: #70b6f6;
+  --tui-info-bg: rgba(112, 182, 246, 0.12);
+  --tui-info-bg-hover: rgba(112, 182, 246, 0.24);
+  --tui-warning-fill: #ff8c67;
+  --tui-warning-bg: rgba(255, 140, 103, 0.12);
+  --tui-warning-bg-hover: rgba(255, 140, 103, 0.24);
+  --tui-neutral-fill: #80868f;
+  --tui-neutral-bg: rgba(128, 134, 143, 0.12);
+  --tui-neutral-bg-hover: rgba(128, 134, 143, 0.24);
+
+  /* ---- Brand ---- */
+  --tui-brand-yellow: #ffdd2d;
+  --tui-brand-ink: #1b1f3b;
+
+  /* ---- Service ---- */
+  --tui-base-border: rgba(27, 31, 59, 0.1);
+  --tui-elevation-01: #ffffff;
+  --tui-elevation-02: #ffffff;
+  --tui-backdrop: rgba(27, 31, 59, 0.75);
+  --tui-selection: rgba(82, 110, 211, 0.24);
+}
+
+/* ============================================================
+   Dark theme
+   ============================================================ */
+[data-tui-theme="dark"] {
+  --tui-base-01: #222426;
+  --tui-base-02: #2c2e30;
+  --tui-base-03: #383a3c;
+  --tui-base-04: #424446;
+  --tui-base-05: #525456;
+  --tui-base-06: #6a6c6e;
+  --tui-base-07: #9a9c9e;
+  --tui-base-08: #c8cacc;
+  --tui-base-09: #ffffff;
+
+  --tui-primary: #6c86e2;
+  --tui-primary-hover: #8198e8;
+  --tui-primary-active: #526ed3;
+  --tui-secondary: rgba(255, 255, 255, 0.08);
+  --tui-secondary-hover: rgba(255, 255, 255, 0.12);
+  --tui-secondary-active: rgba(255, 255, 255, 0.16);
+  --tui-accent: #ffdd2d;
+  --tui-accent-hover: #ffe45c;
+  --tui-accent-active: #f5ce00;
+  --tui-clear: rgba(255, 255, 255, 0.12);
+  --tui-clear-hover: rgba(255, 255, 255, 0.2);
+  --tui-clear-active: rgba(255, 255, 255, 0.28);
+  --tui-clear-inverse: rgba(0, 0, 0, 0.16);
+  --tui-clear-inverse-hover: rgba(0, 0, 0, 0.24);
+  --tui-clear-inverse-active: rgba(0, 0, 0, 0.32);
+
+  --tui-text-01: #ffffff;
+  --tui-text-02: rgba(255, 255, 255, 0.72);
+  --tui-text-03: rgba(255, 255, 255, 0.52);
+  --tui-text-01-night: #1b1f3b;
+  --tui-link: #6c86e2;
+  --tui-link-hover: #8198e8;
+  --tui-positive: #4ac99b;
+  --tui-positive-hover: #5ad3a8;
+  --tui-negative: #ff8b6a;
+  --tui-negative-hover: #ffa085;
+
+  --tui-success-fill: #4ac99b;
+  --tui-success-bg: rgba(74, 201, 155, 0.18);
+  --tui-success-bg-hover: rgba(74, 201, 155, 0.28);
+  --tui-error-fill: #ff8b6a;
+  --tui-error-bg: rgba(244, 87, 37, 0.2);
+  --tui-error-bg-hover: rgba(244, 87, 37, 0.32);
+  --tui-info-fill: #70b6f6;
+  --tui-info-bg: rgba(112, 182, 246, 0.18);
+  --tui-info-bg-hover: rgba(112, 182, 246, 0.28);
+  --tui-warning-fill: #ff8c67;
+  --tui-warning-bg: rgba(255, 140, 103, 0.18);
+  --tui-warning-bg-hover: rgba(255, 140, 103, 0.28);
+  --tui-neutral-fill: #9a9c9e;
+  --tui-neutral-bg: rgba(255, 255, 255, 0.1);
+  --tui-neutral-bg-hover: rgba(255, 255, 255, 0.16);
+
+  --tui-base-border: rgba(255, 255, 255, 0.12);
+  --tui-elevation-01: #2c2e30;
+  --tui-elevation-02: #383a3c;
+  --tui-backdrop: rgba(0, 0, 0, 0.75);
+  --tui-selection: rgba(108, 134, 226, 0.32);
+}
